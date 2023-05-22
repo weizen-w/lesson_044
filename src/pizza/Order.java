@@ -32,9 +32,9 @@ public class Order {
 
   @Override
   public String toString() {
-    String result =  "=== Заказ № " + number + " ===\n";
+    String result = "=== Заказ № " + number + " ===\n";
     double total = 0.0;
-//    pizzas.sort(new PizzaComparator()); // TODO
+    pizzas.sort(new PizzaComparator());
     for (int i = 0; i < pizzas.size(); ++i) {
       int pizzaNumber = i + 1;
       Pizza pizza = pizzas.get(i);
