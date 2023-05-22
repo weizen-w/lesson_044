@@ -39,6 +39,18 @@ public class Pizza {
   private final boolean cheesyBorder;
   private final double price;
 
+  public String getTitle() {
+    return title;
+  }
+
+  public String getSize() {
+    return size.name();
+  }
+
+  public boolean isCheesyBorder() {
+    return cheesyBorder;
+  }
+
   public Pizza(String title, Size size, boolean cheesyBorder) {
     this.title = title;
     this.size = size;
